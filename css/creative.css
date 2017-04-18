@@ -74,12 +74,9 @@ section {
   margin-top: 0; }
 
 .no-padding {
-  padding: 0; }
+  padding: 0;
+  margin: 0 }
 
-  .vid{
-
-    margin-top:100px;
-  }
 
 ::-moz-selection {
   color: white;
@@ -386,6 +383,23 @@ header.masthead {
 
 
 
+div.clicable {
+        position: relative;
+    }
+
+    div.clicable a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        text-decoration: none; /* No underlines on the link */
+        z-index: 10; /* Places the link above everything else in the div */
+        background-color: #FFF; /* Fix to make div clickable in IE */
+        opacity: 0; /* Fix to make div clickable in IE */
+        filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+    }
+
 /*
    <--------------------------- Row options ------------------------------------>
 */
@@ -405,28 +419,6 @@ header.masthead {
 }
 
 
-.row.double > [class*='col'] > [class='row f']  {
-  height: 35vh;
-  flex-direction: column;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-
-.row.double > [class*='col']  [class='row twenty']  {
-  height: 25vh;
-  flex-direction: column;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.row.double > [class*='col'] [class='row twenty'] > [class*='col']  {
-  height: 25vh;
-  flex-direction: column;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 
 .row.double > [class*='col'] {
   height: 60vh;
@@ -434,6 +426,16 @@ header.masthead {
   display: flex;
   flex-wrap: wrap;
 }
+
+.row.normal {
+
+  height: 30vh;
+  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
 
 
 .content-bottom{
@@ -453,6 +455,7 @@ header.masthead {
 
 
 .content-center {
+  flex-direction: column;
   display: flex;
   align-items: center; 
   justify-content: center;
@@ -460,7 +463,7 @@ header.masthead {
   overflow: hidden;
 
    padding-left: 5%;
-  padding-right: 5%;
+    padding-right: 5%;
    padding-bottom: 20px;
     padding-top: 20px;
 }
@@ -469,13 +472,6 @@ header.masthead {
 /*
    <--------------------------- Video flex ------------------------------------>
 */
-
-
-.vid{
-
-    margin: 100px;
-
-}
 
 
 .flex-video {
@@ -549,6 +545,7 @@ header.masthead {
 
 
 
+
 .blueprints {
   width:100%;
   height: 100%;
@@ -576,3 +573,40 @@ header.masthead {
     background-position: center center;
     background-image: url("../img/Components_cards.jpg");
 }
+
+
+
+
+
+
+.paul{
+   width: 100%;
+  height: 100%;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../img/contact_paul.jpg");
+
+
+}
+
+.ricardo{
+
+  width: 100%;
+  height: 100%;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../img/contact_ricardo.jpg");
+
+}
+
+
+
+
+
+
+
+
+
+
