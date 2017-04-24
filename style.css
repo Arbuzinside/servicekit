@@ -219,49 +219,6 @@ header.masthead {
   .service-box p {
     margin-bottom: 0; }
 
-.portfolio-box {
-  position: relative;
-  display: block;
-  max-width: 650px;
-  margin: 0 auto; }
-  .portfolio-box .portfolio-box-caption {
-    color: white;
-    opacity: 0;
-    display: block;
-    background: rgba(240, 95, 64, 0.9);
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    -webkit-transition: all 0.2s;
-    -moz-transition: all 0.2s;
-    transition: all 0.2s; }
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
-      width: 100%;
-      text-align: center;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%); }
-      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
-      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-        font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-        padding: 0 15px; }
-      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 14px; }
-      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-        font-size: 18px; }
-  .portfolio-box:hover .portfolio-box-caption {
-    opacity: 1; }
-  .portfolio-box:focus {
-    outline: none; }
-  @media (min-width: 768px) {
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-      font-size: 16px; }
-    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-      font-size: 22px; } }
 
 .call-to-action {
   padding: 50px 0; }
@@ -581,7 +538,6 @@ row.hor{
   background-image: url("../img/Components_tokens.jpg");
 }
 
-
 .cards{
     width:100%;
     height: 100%;
@@ -591,11 +547,6 @@ row.hor{
     background-image: url("../img/Components_cards.jpg");
 }
 
-
-
-
-
-
 .paul{
    width: 100%;
   height: 100%;
@@ -603,17 +554,122 @@ row.hor{
   background-size: cover;
   background-position: center center;
   background-image: url("../img/contact_paul.jpg");
-
-
 }
 
 .ricardo{
-
   width: 100%;
   height: 100%;
   background-repeat:no-repeat;
   background-size: cover;
   background-position: center center;
   background-image: url("../img/contact_ricardo.jpg");
+}
 
+.gray-band {
+  padding: 3em 0;
+  background-color: #eee;
+}
+
+
+/* Carousel controls */
+
+@media screen and (max-width: 400px) {
+  .flickity-prev-next-button.prev {
+    left: 0;
+  }
+  .flickity-prev-next-button.next {
+    right: 0;
+  }
+}
+.flickity-prev-next-button {
+  width: 50px;
+  height: 50px;
+  background: none;
+  transform: translateY(-50%);
+}
+.flickity-prev-next-button:hover {
+  background: none;
+}
+.flickity-prev-next-button:disabled {
+  opacity: 0;
+}
+.flickity-prev-next-button .arrow {
+  fill: #f05f40;
+}
+.flickity-prev-next-button.no-svg {
+  color: #f05f40;
+}
+.flickity-page-dots {
+  bottom: 0px;
+}
+.flickity-page-dots .dot {
+  width: 15px;
+  height: 15px;
+  background-color: #bbb;
+  opacity: 1;
+}
+.flickity-page-dots .dot.is-selected::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background-color: #f05f40;
+  border-radius: 20px;
+  margin: 3px;
+}
+
+
+.carousel-container {
+}
+.carousel {
+}
+.carousel-cell {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 380px;
+}
+.carousel-img {
+  display: block;
+  width: 70%;
+  align-self: center;
+  margin-bottom: 2em;
+}
+.carousel-text {
+  align-self: center;
+  text-align: center;
+  width: 75%;
+}
+@media screen and (min-width: 500px) {
+  .carousel-cell {
+    height: 440px;
+  }
+  .carousel-img {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .carousel-cell {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .carousel {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .carousel-img {
+    width: 40%;
+    max-height: 400px;
+    margin: 0;
+    margin-right: 20px;
+  }
+  .carousel-text {
+    text-align: left;
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .carousel {
+    width: 1100px;
+  }
 }
