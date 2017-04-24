@@ -427,6 +427,13 @@ div.clicable {
   flex-wrap: wrap;
 }
 
+
+row.hor{
+
+  display: flex;
+  flex-direction: column;
+}
+
 .row.normal {
 
   height: 30vh;
@@ -436,6 +443,13 @@ div.clicable {
 
 }
 
+
+.icon{
+  display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+}
 
 
 .content-bottom{
@@ -452,6 +466,21 @@ div.clicable {
     padding-right: 10%;
 }
 
+
+
+.content-horizontal {
+  flex-direction: row;
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+
+   padding-left: 5%;
+    padding-right: 5%;
+   padding-bottom: 20px;
+    padding-top: 20px;
+}
 
 
 .content-center {
