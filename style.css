@@ -61,7 +61,10 @@ p {
 
 
 
-
+.row-margins{
+  margin-left: 250px;
+  margin-right: 250px;
+}
 
 .no-padding {
   padding: 0;
@@ -216,18 +219,7 @@ header.masthead {
 
               }
 
-<<<<<<< HEAD
-=======
-.service-box {
-  max-width: 400px;
-  margin: 50px auto 0; }
-  @media (min-width: 992px) {
-    .service-box {
-      margin: 20px auto 0; } }
-  .service-box p {
-    margin-bottom: 0; }
 
->>>>>>> 9d605b528a8b990e12bfc90c03cbf50a1a5a3a40
 
 
 
@@ -429,6 +421,14 @@ row.hor{
   display: flex;
   flex-wrap: wrap;
 
+}
+
+
+.border-bottom{
+
+  border-bottom: solid;
+  border-width: 2px;
+  border-color:white;
 }
 
 
